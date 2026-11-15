@@ -15,6 +15,22 @@ table{border-collapse:collapse;width:100%}th{text-transform:uppercase;letter-spa
 @media(max-width:740px){.grid{grid-template-columns:1fr}.summary{grid-template-columns:repeat(3,minmax(0,1fr))}.metric{padding:12px}.metric strong{font-size:22px}.group-head{padding:16px}td,th{padding:10px 12px}}
 @media(max-width:410px){.summary{gap:7px}.metric span{font-size:11px}.hero{padding-top:25px}}
 @media print{button{display:none}.hero{background:white;color:black;padding-bottom:10px}.hero p,.eyebrow{color:black}.grid{gap:12px}.group{break-inside:avoid;box-shadow:none}body{background:white}.notice{background:white}}
+
+/* Zvýraznění sledovaného klubu i jeho orientační nadstavbové skupiny */
+.group.featured{border:3px solid #d69c19;box-shadow:0 9px 28px #b97c1230}
+.group.featured .group-head{background:#fff6db}
+.group.featured .group-tag{background:#d69c19;color:#221600}
+tr.favorite td{background:#fff0bf!important;color:#503800;font-weight:800}
+tr.favorite td:first-child{border-left:5px solid #cf8b00}
+tr.favorite a{color:#603b00}
+.follow-section{margin:34px 0 12px}.section-heading{margin-bottom:14px}.section-heading p{margin:7px 0;color:#65788c;font-size:13px}
+.wide-card{background:white;border:1px solid #dfe6ef;border-radius:16px;overflow:hidden;margin:18px 0;box-shadow:0 5px 18px #15263b0a}
+.table-scroll{overflow-x:auto}.table-scroll table{min-width:700px}.table-scroll td,.table-scroll th{padding:11px 10px;white-space:nowrap}
+.table-scroll td:nth-child(2){min-width:180px}.table-scroll th:not(:nth-child(2)),.table-scroll td:not(:nth-child(2)){text-align:right}
+.section-pad{padding:18px 20px}.player-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;padding:0 20px 20px}
+.player-metric{border-radius:11px;background:#eff5fb;padding:14px}.player-metric strong{font-size:26px;color:#123e66;display:block}.player-metric span{font-size:12px;color:#556b80}
+.note-line{font-size:12px;color:#65788c;padding:0 20px 18px}.featured-label{font-size:12px;color:#9a6600;font-weight:750}
+@media(max-width:550px){.player-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.table-scroll td,.table-scroll th{font-size:12px}}
 </style>
 </head>
 <body>
@@ -24,28 +40,74 @@ table{border-collapse:collapse;width:100%}th{text-transform:uppercase;letter-spa
 <div class="summary"><div class="metric"><strong>12</strong><span>Základních skupin</span></div><div class="metric"><strong>24</strong><span>Postupujících týmů</span></div><div class="metric"><strong>4 × 6</strong><span>Skupiny nadstavby</span></div></div>
 <div class="notice"><strong>Upozornění:</strong> Složení skupin A–D je <strong>nezávazný geografický návrh</strong>. Český hokej stanovuje pouze územní princip, nikoli přesné přiřazení týmů. O postupu rozhoduje konečné pořadí po 1. části.</div>
 <div id="output" class="grid" aria-live="polite"></div>
+<section class="follow-section" aria-labelledby="group8-title">
+  <div class="section-heading"><h2 id="group8-title">1. část – aktuální tabulka skupiny 8</h2><p>Kompletní pořadí včetně BK Havlíčkův Brod. Žlutě je zvýrazněn sledovaný tým.</p></div>
+  <div class="wide-card"><div class="table-scroll" id="group8-table"><p class="section-pad muted">Načítám tabulku skupiny 8…</p></div><div class="note-line" id="group8-updated"></div></div>
+</section>
+<section class="follow-section" aria-labelledby="player-title">
+  <div class="section-heading"><h2 id="player-title">Petr Pálek – hráčské statistiky</h2><p>BK Havlíčkův Brod · Liga mladšího dorostu 2026/27, skupina 8</p></div>
+  <div class="wide-card"><div class="section-pad"><a href="https://ceskyhokej.cz/player/detail/9285" rel="noopener" target="_blank">Oficiální profil hráče na Českém hokeji</a></div><div class="player-metrics" id="player-stats"><p class="muted">Načítám statistiky…</p></div><div class="note-line" id="player-updated"></div></div>
+</section>
 <p class="muted">Z výběru jsou podle systému soutěže vyloučeny EAC Junior Capitals a METROPOLIA Silesia. Pořadí uvnitř základních skupin přebíráme z oficiálních tabulek (nepřepočítáváme pomocí bodů). Přehled se na serveru kontroluje každé dvě hodiny, nikoli po každém utkání.</p>
 </main>
-<footer class="foot"><div class="wrap">Zdroje: <a href="https://ceskyhokej.cz/competition/standings/85" target="_blank" rel="noopener">Oficiální tabulky</a><a href="https://ceskyhokej.cz/competition/description/85" target="_blank" rel="noopener">Hrací systém</a><p>Neoficiální informační projekt. Při změně struktury zdrojového webu zůstávají dostupná poslední úspěšně ověřená data.</p></div></footer>
+<footer class="foot"><div class="wrap">Zdroje: <a href="https://ceskyhokej.cz/player/detail/9285" target="_blank" rel="noopener">Profil Petra Pálka</a><a href="https://ceskyhokej.cz/competition/standings/85" target="_blank" rel="noopener">Oficiální tabulky</a><a href="https://ceskyhokej.cz/competition/description/85" target="_blank" rel="noopener">Hrací systém</a><p>Neoficiální informační projekt. Při změně struktury zdrojového webu zůstávají dostupná poslední úspěšně ověřená data.</p></div></footer>
 <script>
 const output=document.querySelector('#output'),status=document.querySelector('#status');
+const group8Output=document.querySelector('#group8-table'),playerOutput=document.querySelector('#player-stats');
+function isFavorite(name){return /\bbk\s+havlíčkův\s+brod\b/i.test(String(name||''))}
 function el(tag, cls, text){const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=String(text);return e}
 function draw(data){
  if(!Array.isArray(data.regions)||data.regions.length!==4||data.regions.some(r=>r.teams.length!==6))throw Error('Neúplná data');
  output.replaceChildren();
  for(const region of data.regions){
-   const card=el('section','group'), head=el('div','group-head'), labels=el('div');
+   const featured=region.teams.some(t=>isFavorite(t.name));
+   const card=el('section',featured?'group featured':'group'), head=el('div','group-head'), labels=el('div');
    labels.append(el('h2','',`Skupina ${region.id} – ${region.label}`), el('small','',`Původní skupiny: ${region.source_groups.join(', ')}`));
+   if(featured)labels.append(el('div','featured-label','★ Skupina BK Havlíčkův Brod'));
    head.append(labels,el('span','group-tag',region.id));card.append(head);
    const table=el('table'),thead=el('thead'),tr=el('tr');
    for(const title of ['Tým','Pův. sk.','Z','Body']){const th=el('th',title==='Tým'?'':'num',title);th.scope='col';tr.append(th)}
    thead.append(tr);table.append(thead);const tbody=el('tbody');
-   for(const team of region.teams){const row=el('tr');const cell=el('td','team');
+   for(const team of region.teams){const row=el('tr',isFavorite(team.name)?'favorite':'');const cell=el('td','team');
      if(team.url){const a=el('a','',team.name);a.href=team.url;a.rel='noopener';a.target='_blank';cell.append(a)}else cell.textContent=team.name;
      row.append(cell,el('td','num original',`${team.source_group} / ${team.original_rank}.`),el('td','num',team.games),el('td','num',team.points));tbody.append(row)}
    table.append(tbody);card.append(table);output.append(card);
  }
+ drawGroup8(data);drawPlayer(data);
  const date=new Date(data.updated_at);status.textContent='Poslední úspěšné načtení: '+new Intl.DateTimeFormat('cs-CZ',{dateStyle:'medium',timeStyle:'short',timeZone:'Europe/Prague'}).format(date);
+}
+function formatUpdated(date){
+ if(!date)return 'Čas ověření není k dispozici';
+ const d=new Date(date);return Number.isNaN(d.valueOf())?'Čas ověření není k dispozici':
+   new Intl.DateTimeFormat('cs-CZ',{dateStyle:'medium',timeStyle:'short',timeZone:'Europe/Prague'}).format(d);
+}
+function drawGroup8(data){
+ const item=data.group8;
+ if(!item||!Array.isArray(item.headers)||!Array.isArray(item.teams)||item.teams.length<3){
+   group8Output.replaceChildren(el('p','section-pad muted','Tabulka skupiny 8 dosud není v aktualizačních datech dostupná.'));return;
+ }
+ const table=el('table');const head=el('thead'),tr=el('tr');
+ item.headers.forEach(h=>{const th=el('th','',h);th.scope='col';tr.append(th)});head.append(tr);table.append(head);
+ const body=el('tbody');
+ for(const team of item.teams){
+   if(!Array.isArray(team.columns)||team.columns.length!==item.headers.length)continue;
+   const row=el('tr',isFavorite(team.name)?'favorite':'');
+   team.columns.forEach((value,i)=>{
+     const cell=el('td','',value);
+     if(i===1&&team.url){cell.replaceChildren();const a=el('a','',value);a.href=team.url;a.target='_blank';a.rel='noopener';cell.append(a)}
+     row.append(cell);
+   });body.append(row);
+ }
+ table.append(body);group8Output.replaceChildren(table);
+ document.querySelector('#group8-updated').textContent='Poslední úspěšné načtení tabulky: '+formatUpdated(data.updated_at);
+}
+function drawPlayer(data){
+ const player=data.player;
+ if(!player){playerOutput.replaceChildren(el('p','muted','Statistiky hráče se zatím nepodařilo načíst.'));return}
+ const values=[['Zápasy',player.games],['Góly',player.goals],['Asistence',player.assists],['Body',player.points],['Trestné minuty',player.penalty_minutes],['+/-',player.plus_minus]];
+ playerOutput.replaceChildren();
+ for(const [label,value] of values){const item=el('div','player-metric');item.append(el('strong','',value??'–'),el('span','',label));playerOutput.append(item)}
+ document.querySelector('#player-updated').textContent='Poslední úspěšné načtení statistik hráče: '+formatUpdated(data.player_updated_at);
 }
 async function load(){
  status.textContent='Načítám data…';

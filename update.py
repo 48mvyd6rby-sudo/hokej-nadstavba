@@ -11,6 +11,7 @@ import requests
 from bs4 import BeautifulSoup
 
 URL = 'https://ceskyhokej.cz/competition/standings/85'
+PLAYER_URL = 'https://ceskyhokej.cz/player/detail/9285'
 TARGET = Path(__file__).resolve().parent / 'data.json'
 EXCLUDED = ('eac junior capitals', 'metropolia silesia')
 # POUZE ORIENTAČNÍ územní návrh (nikoli oficiální rozdělení Českého hokeje).
@@ -44,6 +45,7 @@ def extract(html):
         if table is None or (next_heading is not None and next_heading.sourceline and table.sourceline and next_heading.sourceline < table.sourceline):
             raise ValueError(f'Chybí tabulka pro skupinu {number}')
         rows = []
+        table_headers = [th.get_text(' ', strip=True) for th in table.find('tr').find_all(['th', 'td'], recursive=False)]
         for tr in table.find_all('tr'):
             cols = tr.find_all('td', recursive=False)
             if len(cols) < 4:
@@ -66,14 +68,25 @@ def extract(html):
                 href = 'https://ceskyhokej.cz' + href
             elif not href.startswith('https://ceskyhokej.cz/'):
                 href = ''
-            rows.append({'name': team, 'original_rank': rank, 'games': games, 'points': points, 'url': href})
+            row = {'name': team, 'original_rank': rank, 'games': games, 'points': points, 'url': href}
+            if number == 8:
+                cells = [td.get_text(' ', strip=True) for td in cols]
+                if len(cells) != len(table_headers):
+                    raise ValueError('Nesouhlasí počet sloupců tabulky skupiny 8')
+                row['columns'] = cells
+            rows.append(row)
         if len(rows) < 3 or len(set(r['name'] for r in rows)) != len(rows):
             raise ValueError(f'Nedostatečná nebo duplicitní data pro skupinu {number}')
         if any(rows[i]['original_rank'] >= rows[i+1]['original_rank'] for i in range(len(rows)-1)):
             raise ValueError(f'Chybná posloupnost pořadí skupiny {number}')
         groups[number] = rows
+        if number == 8:
+            extract._group8_headers = table_headers
     if set(groups) != set(range(1, 13)):
         raise ValueError(f'Nenalezeno všech 12 skupin, dostupné: {sorted(groups)}')
+
+    if not any('havlíčkův brod' in norm(t['name']) for t in groups[8]):
+        raise ValueError('V tabulce skupiny 8 chybí BK Havlíčkův Brod')
 
     selected = {}
     for number, rows in groups.items():
@@ -90,7 +103,40 @@ def extract(html):
     return {'source': URL, 'rules': 'https://ceskyhokej.cz/competition/description/85',
             'updated_at': datetime.now(ZoneInfo('Europe/Prague')).isoformat(timespec='seconds'),
             'season': '2026/27', 'provisional_regions': True, 'regions': regions,
-            'groups': [{'id': n, 'teams': selected[n]} for n in range(1,13)]}
+            'groups': [{'id': n, 'teams': selected[n]} for n in range(1,13)],
+            'group8': {'headers': table_headers_by_group8(groups[8]), 'teams': groups[8]}}
+
+
+def table_headers_by_group8(rows):
+    # Hlavička se může na stránce v budoucnu změnit; zachováme původní strukturu.
+    headers = getattr(extract, '_group8_headers', None)
+    if not headers or len(headers) != len(rows[0].get('columns', [])):
+        raise ValueError('Nedostupná hlavička tabulky skupiny 8')
+    return headers
+
+
+def extract_player(html):
+    soup = BeautifulSoup(html, 'html.parser')
+    # Údaje se vyhledávají v sekci konkrétní soutěže, nikoli v kariérních součtech.
+    text = soup.get_text(' ', strip=True).replace('\xa0', ' ')
+    start = re.search(r'Liga\s+mladšího\s+dorostu\s+2026\s*/\s*27\s+sk\.?\s*8\b', text, re.I)
+    if not start:
+        raise ValueError('Na profilu Petra Pálka chybí sezónní statistiky skupiny 8')
+    snippet = text[start.end():start.end()+900]
+    fields = [r'Zápasy', r'Góly', r'Asistence', r'Body', r'TM', r'\+/-']
+    pattern = r'\s*'.join(rf'(?:{field})\s*(\d+)'  for field in fields)
+    match = re.search(pattern, snippet, re.I)
+    if not match:
+        raise ValueError('Statistiky Petra Pálka mají neznámý formát')
+    numbers = list(map(int, match.groups()))
+    if numbers[1] + numbers[2] != numbers[3]:
+        raise ValueError('Nesouhlasí góly, asistence a body Petra Pálka')
+    if numbers[0] > 100 or numbers[3] > 500:
+        raise ValueError('Nepravděpodobná hodnota hráčských statistik')
+    return {'name': 'Petr Pálek', 'team': 'BK Havlíčkův Brod', 'url': PLAYER_URL,
+            'competition': 'Liga mladšího dorostu 2026/27 – skupina 8',
+            'games': numbers[0], 'goals': numbers[1], 'assists': numbers[2],
+            'points': numbers[3], 'penalty_minutes': numbers[4], 'plus_minus': numbers[5]}
 
 
 def main():
@@ -98,6 +144,19 @@ def main():
     response.raise_for_status()
     response.encoding = response.apparent_encoding if response.encoding is None else response.encoding
     output = extract(response.text)
+    try:
+        player_response = requests.get(PLAYER_URL, headers={'User-Agent': 'Mozilla/5.0 (compatible; HockeyStandingsTracker/1.1)'}, timeout=40)
+        player_response.raise_for_status()
+        output['player'] = extract_player(player_response.text)
+        output['player_updated_at'] = output['updated_at']
+    except Exception as exc:
+        # Závada profilu hráče nesmí zastavit aktualizaci ostatních 12 skupin.
+        if TARGET.exists():
+            previous = json.loads(TARGET.read_text(encoding='utf-8'))
+            if 'player' in previous:
+                output['player'] = previous['player']
+                output['player_updated_at'] = previous.get('player_updated_at')
+        print(f'WARNING: Statistika hráče nebyla obnovena: {exc}', file=sys.stderr)
     temp = TARGET.with_suffix('.json.tmp')
     temp.write_text(json.dumps(output, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
     temp.replace(TARGET)

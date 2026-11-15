@@ -495,5 +495,195 @@
         }
       ]
     }
-  ]
+  ],
+  "group8": {
+    "headers": [
+      "#",
+      "TÝM",
+      "Z",
+      "V",
+      "VP",
+      "PP",
+      "P",
+      "SKÓRE",
+      "B"
+    ],
+    "teams": [
+      {
+        "name": "BK Havlíčkův Brod",
+        "original_rank": 1,
+        "games": 12,
+        "points": 36,
+        "url": "",
+        "columns": [
+          "1.",
+          "BK Havlíčkův Brod",
+          "12",
+          "12",
+          "0",
+          "0",
+          "0",
+          "153:19",
+          "36"
+        ]
+      },
+      {
+        "name": "HC Chrudim",
+        "original_rank": 2,
+        "games": 13,
+        "points": 33,
+        "url": "",
+        "columns": [
+          "2.",
+          "HC Chrudim",
+          "13",
+          "11",
+          "0",
+          "0",
+          "2",
+          "87:24",
+          "33"
+        ]
+      },
+      {
+        "name": "HC Spartak Choceň",
+        "original_rank": 3,
+        "games": 12,
+        "points": 22,
+        "url": "",
+        "columns": [
+          "3.",
+          "HC Spartak Choceň",
+          "12",
+          "7",
+          "0",
+          "1",
+          "4",
+          "52:56",
+          "22"
+        ]
+      },
+      {
+        "name": "HC Hlinsko",
+        "original_rank": 4,
+        "games": 13,
+        "points": 20,
+        "url": "",
+        "columns": [
+          "4.",
+          "HC Hlinsko",
+          "13",
+          "6",
+          "0",
+          "2",
+          "5",
+          "59:61",
+          "20"
+        ]
+      },
+      {
+        "name": "HC Litomyšl",
+        "original_rank": 5,
+        "games": 12,
+        "points": 16,
+        "url": "",
+        "columns": [
+          "5.",
+          "HC Litomyšl",
+          "12",
+          "4",
+          "2",
+          "0",
+          "6",
+          "49:56",
+          "16"
+        ]
+      },
+      {
+        "name": "Loko. Česká Třebová",
+        "original_rank": 6,
+        "games": 14,
+        "points": 14,
+        "url": "",
+        "columns": [
+          "6.",
+          "Loko. Česká Třebová",
+          "14",
+          "4",
+          "1",
+          "0",
+          "9",
+          "64:86",
+          "14"
+        ]
+      },
+      {
+        "name": "Hokejový klub Čáslav",
+        "original_rank": 7,
+        "games": 13,
+        "points": 13,
+        "url": "",
+        "columns": [
+          "7.",
+          "Hokejový klub Čáslav",
+          "13",
+          "3",
+          "2",
+          "0",
+          "8",
+          "32:87",
+          "13"
+        ]
+      },
+      {
+        "name": "Slovan Morav.Třebová",
+        "original_rank": 8,
+        "games": 13,
+        "points": 10,
+        "url": "",
+        "columns": [
+          "8.",
+          "Slovan Morav.Třebová",
+          "13",
+          "3",
+          "0",
+          "1",
+          "9",
+          "41:94",
+          "10"
+        ]
+      },
+      {
+        "name": "HC Světlá n. Sáz.",
+        "original_rank": 9,
+        "games": 12,
+        "points": 7,
+        "url": "",
+        "columns": [
+          "9.",
+          "HC Světlá n. Sáz.",
+          "12",
+          "2",
+          "0",
+          "1",
+          "9",
+          "41:95",
+          "7"
+        ]
+      }
+    ]
+  },
+  "player": {
+    "name": "Petr Pálek",
+    "team": "BK Havlíčkův Brod",
+    "url": "https://ceskyhokej.cz/player/detail/9285",
+    "competition": "Liga mladšího dorostu 2026/27 – skupina 8",
+    "games": 12,
+    "goals": 11,
+    "assists": 12,
+    "points": 23,
+    "penalty_minutes": 4,
+    "plus_minus": 0
+  },
+  "player_updated_at": "2026-11-15T17:04:00+01:00"
 }
