@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0d1b2b">
+<title>Mladší dorost 2026/27 · Nadstavba – aktuální postupující</title>
+<meta name="description" content="Automaticky aktualizovaný přehled 24 týmů postupujících do nadstavby Ligy mladšího dorostu 2026/27.">
+<style>
+:root{font-family:system-ui,-apple-system,'Segoe UI',Arial,sans-serif;color:#15263b;background:#f2f5f9;font-synthesis:none}
+*{box-sizing:border-box} body{margin:0} a{color:#1764ad} .hero{background:linear-gradient(110deg,#0d1b2b,#194065);color:white;padding:38px 22px 34px}
+.wrap{max-width:1080px;margin:auto}.eyebrow{color:#9bd3f0;letter-spacing:2px;text-transform:uppercase;font-size:12px;font-weight:800}h1{font-size:clamp(28px,5vw,46px);letter-spacing:-1.6px;line-height:1.1;margin:10px 0}h2{font-size:21px;margin:0}p{line-height:1.55}.hero p{color:#d8e3ee;margin:8px 0}
+.toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:20px 0}.pill{display:inline-block;padding:8px 12px;border-radius:100px;background:#e9eef4;color:#43566c;font-size:13px;font-weight:600}button{border:0;border-radius:9px;padding:11px 16px;background:#145b97;color:#fff;font-size:14px;font-weight:700;cursor:pointer}button:hover{background:#0c406f}
+main{padding:2px 22px 50px}.summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:24px 0}.metric{background:#fff;border:1px solid #e0e7ef;padding:18px;border-radius:14px}.metric strong{display:block;font-size:27px;color:#0c4778}.metric span{font-size:12px;color:#64748b}.notice{background:#fff6df;border-left:4px solid #dc9e21;padding:13px 15px;border-radius:9px;color:#644c16;margin:16px 0}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:22px 0}.group{background:#fff;border:1px solid #dfe6ef;border-radius:16px;overflow:hidden;box-shadow:0 5px 18px #15263b0a}.group-head{padding:18px 20px 13px;display:flex;justify-content:space-between;gap:12px;align-items:center}.group small{display:block;color:#70849b;margin-top:5px;font-size:12px}.group-tag{font-weight:900;font-size:23px;color:#12568c;background:#e5f2fa;border-radius:12px;min-width:44px;text-align:center;padding:8px}
+table{border-collapse:collapse;width:100%}th{text-transform:uppercase;letter-spacing:.5px;font-size:10px;color:#71859a;background:#f7f9fc;padding:10px 15px;text-align:left}td{padding:12px 15px;font-size:13px;border-top:1px solid #edf1f5}tr:hover td{background:#f8fafc}.team{font-weight:700}.team a{text-decoration:none;color:#15263b}.team a:hover{text-decoration:underline}.num{text-align:right;font-variant-numeric:tabular-nums}.original{color:#74859a;font-size:12px}.foot{background:#e7edf4;padding:24px 22px;font-size:13px;color:#53687d}.foot a{margin-right:16px}.error{padding:30px 0;color:#af253d}.muted{color:#65788c;font-size:13px}
+@media(max-width:740px){.grid{grid-template-columns:1fr}.summary{grid-template-columns:repeat(3,minmax(0,1fr))}.metric{padding:12px}.metric strong{font-size:22px}.group-head{padding:16px}td,th{padding:10px 12px}}
+@media(max-width:410px){.summary{gap:7px}.metric span{font-size:11px}.hero{padding-top:25px}}
+@media print{button{display:none}.hero{background:white;color:black;padding-bottom:10px}.hero p,.eyebrow{color:black}.grid{gap:12px}.group{break-inside:avoid;box-shadow:none}body{background:white}.notice{background:white}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap"><div class="eyebrow">Český hokej · sezóna 2026/27</div><h1>Postupující do nadstavby</h1><p>Liga mladšího dorostu · 2. část, a) Nadstavbová</p><p>Průběžný výběr z 12 základních skupin podle aktuálního pořadí.</p></div></header>
+<main class="wrap">
+<div class="toolbar"><span id="status" class="pill" role="status">Načítám data…</span><button type="button" id="refresh">Zkontrolovat nejnovější data</button><button type="button" id="share">Sdílet odkaz</button></div>
+<div class="summary"><div class="metric"><strong>12</strong><span>Základních skupin</span></div><div class="metric"><strong>24</strong><span>Postupujících týmů</span></div><div class="metric"><strong>4 × 6</strong><span>Skupiny nadstavby</span></div></div>
+<div class="notice"><strong>Upozornění:</strong> Složení skupin A–D je <strong>nezávazný geografický návrh</strong>. Český hokej stanovuje pouze územní princip, nikoli přesné přiřazení týmů. O postupu rozhoduje konečné pořadí po 1. části.</div>
+<div id="output" class="grid" aria-live="polite"></div>
+<p class="muted">Z výběru jsou podle systému soutěže vyloučeny EAC Junior Capitals a METROPOLIA Silesia. Pořadí uvnitř základních skupin přebíráme z oficiálních tabulek (nepřepočítáváme pomocí bodů). Přehled se na serveru kontroluje každé dvě hodiny, nikoli po každém utkání.</p>
+</main>
+<footer class="foot"><div class="wrap">Zdroje: <a href="https://ceskyhokej.cz/competition/standings/85" target="_blank" rel="noopener">Oficiální tabulky</a><a href="https://ceskyhokej.cz/competition/description/85" target="_blank" rel="noopener">Hrací systém</a><p>Neoficiální informační projekt. Při změně struktury zdrojového webu zůstávají dostupná poslední úspěšně ověřená data.</p></div></footer>
+<script>
+const output=document.querySelector('#output'),status=document.querySelector('#status');
+function el(tag, cls, text){const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=String(text);return e}
+function draw(data){
+ if(!Array.isArray(data.regions)||data.regions.length!==4||data.regions.some(r=>r.teams.length!==6))throw Error('Neúplná data');
+ output.replaceChildren();
+ for(const region of data.regions){
+   const card=el('section','group'), head=el('div','group-head'), labels=el('div');
+   labels.append(el('h2','',`Skupina ${region.id} – ${region.label}`), el('small','',`Původní skupiny: ${region.source_groups.join(', ')}`));
+   head.append(labels,el('span','group-tag',region.id));card.append(head);
+   const table=el('table'),thead=el('thead'),tr=el('tr');
+   for(const title of ['Tým','Pův. sk.','Z','Body']){const th=el('th',title==='Tým'?'':'num',title);th.scope='col';tr.append(th)}
+   thead.append(tr);table.append(thead);const tbody=el('tbody');
+   for(const team of region.teams){const row=el('tr');const cell=el('td','team');
+     if(team.url){const a=el('a','',team.name);a.href=team.url;a.rel='noopener';a.target='_blank';cell.append(a)}else cell.textContent=team.name;
+     row.append(cell,el('td','num original',`${team.source_group} / ${team.original_rank}.`),el('td','num',team.games),el('td','num',team.points));tbody.append(row)}
+   table.append(tbody);card.append(table);output.append(card);
+ }
+ const date=new Date(data.updated_at);status.textContent='Poslední úspěšné načtení: '+new Intl.DateTimeFormat('cs-CZ',{dateStyle:'medium',timeStyle:'short',timeZone:'Europe/Prague'}).format(date);
+}
+async function load(){
+ status.textContent='Načítám data…';
+ try{const res=await fetch('./data.json?t='+Date.now(),{cache:'no-store'});if(!res.ok)throw Error('HTTP '+res.status);draw(await res.json())}
+ catch(err){status.textContent='Data momentálně nedostupná';if(!output.children.length)output.append(el('p','error','Nepodařilo se načíst data. Zkuste stránku později nebo otevřete oficiální tabulky.'));console.error(err)}
+}
+document.querySelector('#refresh').addEventListener('click',load);
+document.querySelector('#share').addEventListener('click',async()=>{try{if(navigator.share)await navigator.share({title:document.title,url:location.href});else{await navigator.clipboard.writeText(location.href);alert('Odkaz byl zkopírován.')}}catch(err){if(err.name!=='AbortError')prompt('Zkopírujte odkaz:',location.href)}});
+load();
+</script>
+</body>
+</html>

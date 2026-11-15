@@ -1,0 +1,499 @@
+{
+  "source": "https://ceskyhokej.cz/competition/standings/85",
+  "rules": "https://ceskyhokej.cz/competition/description/85",
+  "updated_at": "2026-11-15T15:46:00+01:00",
+  "season": "2026/27",
+  "provisional_regions": true,
+  "regions": [
+    {
+      "id": "A",
+      "label": "Západ a Praha",
+      "source_groups": [
+        1,
+        2,
+        4
+      ],
+      "teams": [
+        {
+          "name": "MOSTEČTÍ LVI",
+          "original_rank": 1,
+          "games": 9,
+          "points": 27,
+          "source_group": 1,
+          "url": ""
+        },
+        {
+          "name": "HC Tygři Klášterec nad Ohří",
+          "original_rank": 2,
+          "games": 11,
+          "points": 27,
+          "source_group": 1,
+          "url": ""
+        },
+        {
+          "name": "HC Příbram",
+          "original_rank": 1,
+          "games": 11,
+          "points": 33,
+          "source_group": 2,
+          "url": ""
+        },
+        {
+          "name": "HC Meteor Třemošná",
+          "original_rank": 2,
+          "games": 11,
+          "points": 30,
+          "source_group": 2,
+          "url": ""
+        },
+        {
+          "name": "HC Hvězda Praha",
+          "original_rank": 1,
+          "games": 12,
+          "points": 30,
+          "source_group": 4,
+          "url": ""
+        },
+        {
+          "name": "HC Letci Letňany",
+          "original_rank": 2,
+          "games": 12,
+          "points": 30,
+          "source_group": 4,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "label": "Jih a střed",
+      "source_groups": [
+        3,
+        5,
+        9
+      ],
+      "teams": [
+        {
+          "name": "HC MAD BULL",
+          "original_rank": 1,
+          "games": 13,
+          "points": 36,
+          "source_group": 3,
+          "url": ""
+        },
+        {
+          "name": "HC Tábor",
+          "original_rank": 2,
+          "games": 12,
+          "points": 33,
+          "source_group": 3,
+          "url": ""
+        },
+        {
+          "name": "SC Retia Kolín",
+          "original_rank": 1,
+          "games": 14,
+          "points": 42,
+          "source_group": 5,
+          "url": ""
+        },
+        {
+          "name": "HC Com-Sys Říčany",
+          "original_rank": 2,
+          "games": 12,
+          "points": 27,
+          "source_group": 5,
+          "url": ""
+        },
+        {
+          "name": "SK H.Slavia Třebíč",
+          "original_rank": 1,
+          "games": 9,
+          "points": 27,
+          "source_group": 9,
+          "url": ""
+        },
+        {
+          "name": "HC Orli Znojmo",
+          "original_rank": 2,
+          "games": 9,
+          "points": 21,
+          "source_group": 9,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "label": "Sever a východ Čech",
+      "source_groups": [
+        6,
+        7,
+        8
+      ],
+      "teams": [
+        {
+          "name": "HC Stadion Litoměřice",
+          "original_rank": 1,
+          "games": 13,
+          "points": 36,
+          "source_group": 6,
+          "url": ""
+        },
+        {
+          "name": "HC Turnov 1931",
+          "original_rank": 2,
+          "games": 13,
+          "points": 33,
+          "source_group": 6,
+          "url": ""
+        },
+        {
+          "name": "Hokejový klub Autocentrum Jičín",
+          "original_rank": 1,
+          "games": 12,
+          "points": 29,
+          "source_group": 7,
+          "url": ""
+        },
+        {
+          "name": "HC Náchod",
+          "original_rank": 2,
+          "games": 12,
+          "points": 28,
+          "source_group": 7,
+          "url": ""
+        },
+        {
+          "name": "BK Havlíčkův Brod",
+          "original_rank": 1,
+          "games": 12,
+          "points": 36,
+          "source_group": 8,
+          "url": ""
+        },
+        {
+          "name": "HC Chrudim",
+          "original_rank": 2,
+          "games": 13,
+          "points": 33,
+          "source_group": 8,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "label": "Morava a Slezsko",
+      "source_groups": [
+        10,
+        11,
+        12
+      ],
+      "teams": [
+        {
+          "name": "TECHNIKA HOCKEY BRNO",
+          "original_rank": 1,
+          "games": 12,
+          "points": 36,
+          "source_group": 10,
+          "url": ""
+        },
+        {
+          "name": "FOSFA HC Lvi Břeclav mládež z.s.",
+          "original_rank": 2,
+          "games": 11,
+          "points": 24,
+          "source_group": 10,
+          "url": ""
+        },
+        {
+          "name": "HC ZUBR Přerov",
+          "original_rank": 1,
+          "games": 12,
+          "points": 35,
+          "source_group": 11,
+          "url": ""
+        },
+        {
+          "name": "HK MD Šumperk",
+          "original_rank": 2,
+          "games": 12,
+          "points": 29,
+          "source_group": 11,
+          "url": ""
+        },
+        {
+          "name": "HC AZ Havířov",
+          "original_rank": 1,
+          "games": 11,
+          "points": 31,
+          "source_group": 12,
+          "url": ""
+        },
+        {
+          "name": "HC Slezan Opava s.r.o.",
+          "original_rank": 2,
+          "games": 11,
+          "points": 31,
+          "source_group": 12,
+          "url": ""
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "teams": [
+        {
+          "name": "MOSTEČTÍ LVI",
+          "original_rank": 1,
+          "games": 9,
+          "points": 27,
+          "source_group": 1,
+          "url": ""
+        },
+        {
+          "name": "HC Tygři Klášterec nad Ohří",
+          "original_rank": 2,
+          "games": 11,
+          "points": 27,
+          "source_group": 1,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "teams": [
+        {
+          "name": "HC Příbram",
+          "original_rank": 1,
+          "games": 11,
+          "points": 33,
+          "source_group": 2,
+          "url": ""
+        },
+        {
+          "name": "HC Meteor Třemošná",
+          "original_rank": 2,
+          "games": 11,
+          "points": 30,
+          "source_group": 2,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "teams": [
+        {
+          "name": "HC MAD BULL",
+          "original_rank": 1,
+          "games": 13,
+          "points": 36,
+          "source_group": 3,
+          "url": ""
+        },
+        {
+          "name": "HC Tábor",
+          "original_rank": 2,
+          "games": 12,
+          "points": 33,
+          "source_group": 3,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "teams": [
+        {
+          "name": "HC Hvězda Praha",
+          "original_rank": 1,
+          "games": 12,
+          "points": 30,
+          "source_group": 4,
+          "url": ""
+        },
+        {
+          "name": "HC Letci Letňany",
+          "original_rank": 2,
+          "games": 12,
+          "points": 30,
+          "source_group": 4,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "teams": [
+        {
+          "name": "SC Retia Kolín",
+          "original_rank": 1,
+          "games": 14,
+          "points": 42,
+          "source_group": 5,
+          "url": ""
+        },
+        {
+          "name": "HC Com-Sys Říčany",
+          "original_rank": 2,
+          "games": 12,
+          "points": 27,
+          "source_group": 5,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "teams": [
+        {
+          "name": "HC Stadion Litoměřice",
+          "original_rank": 1,
+          "games": 13,
+          "points": 36,
+          "source_group": 6,
+          "url": ""
+        },
+        {
+          "name": "HC Turnov 1931",
+          "original_rank": 2,
+          "games": 13,
+          "points": 33,
+          "source_group": 6,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "teams": [
+        {
+          "name": "Hokejový klub Autocentrum Jičín",
+          "original_rank": 1,
+          "games": 12,
+          "points": 29,
+          "source_group": 7,
+          "url": ""
+        },
+        {
+          "name": "HC Náchod",
+          "original_rank": 2,
+          "games": 12,
+          "points": 28,
+          "source_group": 7,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "teams": [
+        {
+          "name": "BK Havlíčkův Brod",
+          "original_rank": 1,
+          "games": 12,
+          "points": 36,
+          "source_group": 8,
+          "url": ""
+        },
+        {
+          "name": "HC Chrudim",
+          "original_rank": 2,
+          "games": 13,
+          "points": 33,
+          "source_group": 8,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "teams": [
+        {
+          "name": "SK H.Slavia Třebíč",
+          "original_rank": 1,
+          "games": 9,
+          "points": 27,
+          "source_group": 9,
+          "url": ""
+        },
+        {
+          "name": "HC Orli Znojmo",
+          "original_rank": 2,
+          "games": 9,
+          "points": 21,
+          "source_group": 9,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "teams": [
+        {
+          "name": "TECHNIKA HOCKEY BRNO",
+          "original_rank": 1,
+          "games": 12,
+          "points": 36,
+          "source_group": 10,
+          "url": ""
+        },
+        {
+          "name": "FOSFA HC Lvi Břeclav mládež z.s.",
+          "original_rank": 2,
+          "games": 11,
+          "points": 24,
+          "source_group": 10,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "teams": [
+        {
+          "name": "HC ZUBR Přerov",
+          "original_rank": 1,
+          "games": 12,
+          "points": 35,
+          "source_group": 11,
+          "url": ""
+        },
+        {
+          "name": "HK MD Šumperk",
+          "original_rank": 2,
+          "games": 12,
+          "points": 29,
+          "source_group": 11,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "teams": [
+        {
+          "name": "HC AZ Havířov",
+          "original_rank": 1,
+          "games": 11,
+          "points": 31,
+          "source_group": 12,
+          "url": ""
+        },
+        {
+          "name": "HC Slezan Opava s.r.o.",
+          "original_rank": 2,
+          "games": 11,
+          "points": 31,
+          "source_group": 12,
+          "url": ""
+        }
+      ]
+    }
+  ]
+}
