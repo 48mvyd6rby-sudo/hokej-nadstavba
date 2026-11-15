@@ -1,7 +1,7 @@
 {
   "source": "https://ceskyhokej.cz/competition/standings/85",
   "rules": "https://ceskyhokej.cz/competition/description/85",
-  "updated_at": "2026-11-15T15:46:00+01:00",
+  "updated_at": "2026-11-15T18:59:34+01:00",
   "season": "2026/27",
   "provisional_regions": true,
   "regions": [
@@ -17,50 +17,50 @@
         {
           "name": "MOSTEČTÍ LVI",
           "original_rank": 1,
-          "games": 9,
-          "points": 27,
-          "source_group": 1,
-          "url": ""
+          "games": 10,
+          "points": 29,
+          "url": "https://ceskyhokej.cz/club/detail/114",
+          "source_group": 1
         },
         {
           "name": "HC Tygři Klášterec nad Ohří",
           "original_rank": 2,
-          "games": 11,
-          "points": 27,
-          "source_group": 1,
-          "url": ""
+          "games": 12,
+          "points": 28,
+          "url": "https://ceskyhokej.cz/club/detail/55",
+          "source_group": 1
         },
         {
           "name": "HC Příbram",
           "original_rank": 1,
           "games": 11,
           "points": 33,
-          "source_group": 2,
-          "url": ""
+          "url": "https://ceskyhokej.cz/club/detail/48",
+          "source_group": 2
         },
         {
           "name": "HC Meteor Třemošná",
           "original_rank": 2,
           "games": 11,
           "points": 30,
-          "source_group": 2,
-          "url": ""
+          "url": "https://ceskyhokej.cz/club/detail/135",
+          "source_group": 2
         },
         {
           "name": "HC Hvězda Praha",
           "original_rank": 1,
           "games": 12,
           "points": 30,
-          "source_group": 4,
-          "url": ""
+          "url": "https://ceskyhokej.cz/club/detail/27",
+          "source_group": 4
         },
         {
           "name": "HC Letci Letňany",
           "original_rank": 2,
           "games": 12,
           "points": 30,
-          "source_group": 4,
-          "url": ""
+          "url": "https://ceskyhokej.cz/club/detail/43",
+          "source_group": 4
         }
       ]
     },
@@ -78,48 +78,48 @@
           "original_rank": 1,
           "games": 13,
           "points": 36,
-          "source_group": 3,
-          "url": ""
+          "url": "https://ceskyhokej.cz/club/detail/91",
+          "source_group": 3
         },
         {
           "name": "HC Tábor",
           "original_rank": 2,
-          "games": 12,
-          "points": 33,
-          "source_group": 3,
-          "url": ""
+          "games": 13,
+          "points": 36,
+          "url": "https://ceskyhokej.cz/club/detail/89",
+          "source_group": 3
         },
         {
           "name": "SC Retia Kolín",
           "original_rank": 1,
           "games": 14,
           "points": 42,
-          "source_group": 5,
-          "url": ""
+          "url": "https://ceskyhokej.cz/club/detail/20",
+          "source_group": 5
         },
         {
           "name": "HC Com-Sys Říčany",
           "original_rank": 2,
-          "games": 12,
-          "points": 27,
-          "source_group": 5,
-          "url": ""
+          "games": 13,
+          "points": 30,
+          "url": "https://ceskyhokej.cz/club/detail/140",
+          "source_group": 5
         },
         {
           "name": "SK H.Slavia Třebíč",
           "original_rank": 1,
           "games": 9,
           "points": 27,
-          "source_group": 9,
-          "url": ""
+          "url": "https://ceskyhokej.cz/club/detail/22",
+          "source_group": 9
         },
         {
           "name": "HC Orli Znojmo",
           "original_rank": 2,
           "games": 9,
           "points": 21,
-          "source_group": 9,
-          "url": ""
+          "url": "https://ceskyhokej.cz/club/detail/173",
+          "source_group": 9
         }
       ]
     },
@@ -137,48 +137,70 @@
           "original_rank": 1,
           "games": 13,
           "points": 36,
-          "source_group": 6,
-          "url": ""
+          "url": "https://ceskyhokej.cz/club/detail/24",
+          "source_group": 6
         },
         {
           "name": "HC Turnov 1931",
           "original_rank": 2,
           "games": 13,
           "points": 33,
-          "source_group": 6,
-          "url": ""
+          "url": "https://ceskyhokej.cz/club/detail/81",
+          "source_group": 6
         },
         {
           "name": "Hokejový klub Autocentrum Jičín",
           "original_rank": 1,
           "games": 12,
           "points": 29,
-          "source_group": 7,
-          "url": ""
+          "url": "https://ceskyhokej.cz/club/detail/154",
+          "source_group": 7
         },
         {
           "name": "HC Náchod",
           "original_rank": 2,
           "games": 12,
           "points": 28,
-          "source_group": 7,
-          "url": ""
+          "url": "https://ceskyhokej.cz/club/detail/158",
+          "source_group": 7
         },
         {
           "name": "BK Havlíčkův Brod",
           "original_rank": 1,
           "games": 12,
           "points": 36,
-          "source_group": 8,
-          "url": ""
+          "url": "https://ceskyhokej.cz/club/detail/128",
+          "columns": [
+            "1.",
+            "BK Havlíčkův Brod",
+            "12",
+            "12",
+            "0",
+            "0",
+            "0",
+            "153:19",
+            "36"
+          ],
+          "source_group": 8
         },
         {
           "name": "HC Chrudim",
           "original_rank": 2,
           "games": 13,
           "points": 33,
-          "source_group": 8,
-          "url": ""
+          "url": "https://ceskyhokej.cz/club/detail/98",
+          "columns": [
+            "2.",
+            "HC Chrudim",
+            "13",
+            "11",
+            "0",
+            "0",
+            "2",
+            "87:24",
+            "33"
+          ],
+          "source_group": 8
         }
       ]
     },
@@ -196,48 +218,48 @@
           "original_rank": 1,
           "games": 12,
           "points": 36,
-          "source_group": 10,
-          "url": ""
+          "url": "https://ceskyhokej.cz/club/detail/132",
+          "source_group": 10
         },
         {
           "name": "FOSFA HC Lvi Břeclav mládež z.s.",
           "original_rank": 2,
-          "games": 11,
-          "points": 24,
-          "source_group": 10,
-          "url": ""
+          "games": 12,
+          "points": 27,
+          "url": "https://ceskyhokej.cz/club/detail/1439",
+          "source_group": 10
         },
         {
           "name": "HC ZUBR Přerov",
           "original_rank": 1,
           "games": 12,
           "points": 35,
-          "source_group": 11,
-          "url": ""
+          "url": "https://ceskyhokej.cz/club/detail/4",
+          "source_group": 11
         },
         {
           "name": "HK MD Šumperk",
           "original_rank": 2,
           "games": 12,
           "points": 29,
-          "source_group": 11,
-          "url": ""
+          "url": "https://ceskyhokej.cz/club/detail/134",
+          "source_group": 11
         },
         {
           "name": "HC AZ Havířov",
           "original_rank": 1,
           "games": 11,
           "points": 31,
-          "source_group": 12,
-          "url": ""
+          "url": "https://ceskyhokej.cz/club/detail/124",
+          "source_group": 12
         },
         {
           "name": "HC Slezan Opava s.r.o.",
           "original_rank": 2,
           "games": 11,
           "points": 31,
-          "source_group": 12,
-          "url": ""
+          "url": "https://ceskyhokej.cz/club/detail/127",
+          "source_group": 12
         }
       ]
     }
@@ -249,18 +271,18 @@
         {
           "name": "MOSTEČTÍ LVI",
           "original_rank": 1,
-          "games": 9,
-          "points": 27,
-          "source_group": 1,
-          "url": ""
+          "games": 10,
+          "points": 29,
+          "url": "https://ceskyhokej.cz/club/detail/114",
+          "source_group": 1
         },
         {
           "name": "HC Tygři Klášterec nad Ohří",
           "original_rank": 2,
-          "games": 11,
-          "points": 27,
-          "source_group": 1,
-          "url": ""
+          "games": 12,
+          "points": 28,
+          "url": "https://ceskyhokej.cz/club/detail/55",
+          "source_group": 1
         }
       ]
     },
@@ -272,16 +294,16 @@
           "original_rank": 1,
           "games": 11,
           "points": 33,
-          "source_group": 2,
-          "url": ""
+          "url": "https://ceskyhokej.cz/club/detail/48",
+          "source_group": 2
         },
         {
           "name": "HC Meteor Třemošná",
           "original_rank": 2,
           "games": 11,
           "points": 30,
-          "source_group": 2,
-          "url": ""
+          "url": "https://ceskyhokej.cz/club/detail/135",
+          "source_group": 2
         }
       ]
     },
@@ -293,16 +315,16 @@
           "original_rank": 1,
           "games": 13,
           "points": 36,
-          "source_group": 3,
-          "url": ""
+          "url": "https://ceskyhokej.cz/club/detail/91",
+          "source_group": 3
         },
         {
           "name": "HC Tábor",
           "original_rank": 2,
-          "games": 12,
-          "points": 33,
-          "source_group": 3,
-          "url": ""
+          "games": 13,
+          "points": 36,
+          "url": "https://ceskyhokej.cz/club/detail/89",
+          "source_group": 3
         }
       ]
     },
@@ -314,16 +336,16 @@
           "original_rank": 1,
           "games": 12,
           "points": 30,
-          "source_group": 4,
-          "url": ""
+          "url": "https://ceskyhokej.cz/club/detail/27",
+          "source_group": 4
         },
         {
           "name": "HC Letci Letňany",
           "original_rank": 2,
           "games": 12,
           "points": 30,
-          "source_group": 4,
-          "url": ""
+          "url": "https://ceskyhokej.cz/club/detail/43",
+          "source_group": 4
         }
       ]
     },
@@ -335,16 +357,16 @@
           "original_rank": 1,
           "games": 14,
           "points": 42,
-          "source_group": 5,
-          "url": ""
+          "url": "https://ceskyhokej.cz/club/detail/20",
+          "source_group": 5
         },
         {
           "name": "HC Com-Sys Říčany",
           "original_rank": 2,
-          "games": 12,
-          "points": 27,
-          "source_group": 5,
-          "url": ""
+          "games": 13,
+          "points": 30,
+          "url": "https://ceskyhokej.cz/club/detail/140",
+          "source_group": 5
         }
       ]
     },
@@ -356,16 +378,16 @@
           "original_rank": 1,
           "games": 13,
           "points": 36,
-          "source_group": 6,
-          "url": ""
+          "url": "https://ceskyhokej.cz/club/detail/24",
+          "source_group": 6
         },
         {
           "name": "HC Turnov 1931",
           "original_rank": 2,
           "games": 13,
           "points": 33,
-          "source_group": 6,
-          "url": ""
+          "url": "https://ceskyhokej.cz/club/detail/81",
+          "source_group": 6
         }
       ]
     },
@@ -377,16 +399,16 @@
           "original_rank": 1,
           "games": 12,
           "points": 29,
-          "source_group": 7,
-          "url": ""
+          "url": "https://ceskyhokej.cz/club/detail/154",
+          "source_group": 7
         },
         {
           "name": "HC Náchod",
           "original_rank": 2,
           "games": 12,
           "points": 28,
-          "source_group": 7,
-          "url": ""
+          "url": "https://ceskyhokej.cz/club/detail/158",
+          "source_group": 7
         }
       ]
     },
@@ -398,16 +420,38 @@
           "original_rank": 1,
           "games": 12,
           "points": 36,
-          "source_group": 8,
-          "url": ""
+          "url": "https://ceskyhokej.cz/club/detail/128",
+          "columns": [
+            "1.",
+            "BK Havlíčkův Brod",
+            "12",
+            "12",
+            "0",
+            "0",
+            "0",
+            "153:19",
+            "36"
+          ],
+          "source_group": 8
         },
         {
           "name": "HC Chrudim",
           "original_rank": 2,
           "games": 13,
           "points": 33,
-          "source_group": 8,
-          "url": ""
+          "url": "https://ceskyhokej.cz/club/detail/98",
+          "columns": [
+            "2.",
+            "HC Chrudim",
+            "13",
+            "11",
+            "0",
+            "0",
+            "2",
+            "87:24",
+            "33"
+          ],
+          "source_group": 8
         }
       ]
     },
@@ -419,16 +463,16 @@
           "original_rank": 1,
           "games": 9,
           "points": 27,
-          "source_group": 9,
-          "url": ""
+          "url": "https://ceskyhokej.cz/club/detail/22",
+          "source_group": 9
         },
         {
           "name": "HC Orli Znojmo",
           "original_rank": 2,
           "games": 9,
           "points": 21,
-          "source_group": 9,
-          "url": ""
+          "url": "https://ceskyhokej.cz/club/detail/173",
+          "source_group": 9
         }
       ]
     },
@@ -440,16 +484,16 @@
           "original_rank": 1,
           "games": 12,
           "points": 36,
-          "source_group": 10,
-          "url": ""
+          "url": "https://ceskyhokej.cz/club/detail/132",
+          "source_group": 10
         },
         {
           "name": "FOSFA HC Lvi Břeclav mládež z.s.",
           "original_rank": 2,
-          "games": 11,
-          "points": 24,
-          "source_group": 10,
-          "url": ""
+          "games": 12,
+          "points": 27,
+          "url": "https://ceskyhokej.cz/club/detail/1439",
+          "source_group": 10
         }
       ]
     },
@@ -461,16 +505,16 @@
           "original_rank": 1,
           "games": 12,
           "points": 35,
-          "source_group": 11,
-          "url": ""
+          "url": "https://ceskyhokej.cz/club/detail/4",
+          "source_group": 11
         },
         {
           "name": "HK MD Šumperk",
           "original_rank": 2,
           "games": 12,
           "points": 29,
-          "source_group": 11,
-          "url": ""
+          "url": "https://ceskyhokej.cz/club/detail/134",
+          "source_group": 11
         }
       ]
     },
@@ -482,16 +526,16 @@
           "original_rank": 1,
           "games": 11,
           "points": 31,
-          "source_group": 12,
-          "url": ""
+          "url": "https://ceskyhokej.cz/club/detail/124",
+          "source_group": 12
         },
         {
           "name": "HC Slezan Opava s.r.o.",
           "original_rank": 2,
           "games": 11,
           "points": 31,
-          "source_group": 12,
-          "url": ""
+          "url": "https://ceskyhokej.cz/club/detail/127",
+          "source_group": 12
         }
       ]
     }
@@ -501,7 +545,7 @@
       "#",
       "TÝM",
       "Z",
-      "V",
+      "v",
       "VP",
       "PP",
       "P",
@@ -514,7 +558,7 @@
         "original_rank": 1,
         "games": 12,
         "points": 36,
-        "url": "",
+        "url": "https://ceskyhokej.cz/club/detail/128",
         "columns": [
           "1.",
           "BK Havlíčkův Brod",
@@ -532,7 +576,7 @@
         "original_rank": 2,
         "games": 13,
         "points": 33,
-        "url": "",
+        "url": "https://ceskyhokej.cz/club/detail/98",
         "columns": [
           "2.",
           "HC Chrudim",
@@ -550,7 +594,7 @@
         "original_rank": 3,
         "games": 12,
         "points": 22,
-        "url": "",
+        "url": "https://ceskyhokej.cz/club/detail/101",
         "columns": [
           "3.",
           "HC Spartak Choceň",
@@ -568,7 +612,7 @@
         "original_rank": 4,
         "games": 13,
         "points": 20,
-        "url": "",
+        "url": "https://ceskyhokej.cz/club/detail/94",
         "columns": [
           "4.",
           "HC Hlinsko",
@@ -586,7 +630,7 @@
         "original_rank": 5,
         "games": 12,
         "points": 16,
-        "url": "",
+        "url": "https://ceskyhokej.cz/club/detail/96",
         "columns": [
           "5.",
           "HC Litomyšl",
@@ -604,7 +648,7 @@
         "original_rank": 6,
         "games": 14,
         "points": 14,
-        "url": "",
+        "url": "https://ceskyhokej.cz/club/detail/93",
         "columns": [
           "6.",
           "Loko. Česká Třebová",
@@ -622,7 +666,7 @@
         "original_rank": 7,
         "games": 13,
         "points": 13,
-        "url": "",
+        "url": "https://ceskyhokej.cz/club/detail/37",
         "columns": [
           "7.",
           "Hokejový klub Čáslav",
@@ -640,7 +684,7 @@
         "original_rank": 8,
         "games": 13,
         "points": 10,
-        "url": "",
+        "url": "https://ceskyhokej.cz/club/detail/97",
         "columns": [
           "8.",
           "Slovan Morav.Třebová",
@@ -658,7 +702,7 @@
         "original_rank": 9,
         "games": 12,
         "points": 7,
-        "url": "",
+        "url": "https://ceskyhokej.cz/club/detail/179",
         "columns": [
           "9.",
           "HC Světlá n. Sáz.",
@@ -685,5 +729,5 @@
     "penalty_minutes": 4,
     "plus_minus": 0
   },
-  "player_updated_at": "2026-11-15T17:04:00+01:00"
+  "player_updated_at": "2026-11-15T18:59:34+01:00"
 }
