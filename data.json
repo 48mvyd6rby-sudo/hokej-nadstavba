@@ -1,7 +1,7 @@
 {
   "source": "https://ceskyhokej.cz/competition/standings/85",
   "rules": "https://ceskyhokej.cz/competition/description/85",
-  "updated_at": "2026-11-17T10:26:03+01:00",
+  "updated_at": "2026-11-17T12:19:10+01:00",
   "season": "2026/27",
   "provisional_regions": true,
   "regions": [
@@ -628,18 +628,18 @@
       {
         "name": "HC Litomyšl",
         "original_rank": 5,
-        "games": 12,
+        "games": 13,
         "points": 16,
         "url": "https://ceskyhokej.cz/club/detail/96",
         "columns": [
           "5.",
           "HC Litomyšl",
-          "12",
+          "13",
           "4",
           "2",
           "0",
-          "6",
-          "49:56",
+          "7",
+          "52:60",
           "16"
         ]
       },
@@ -662,13 +662,31 @@
         ]
       },
       {
-        "name": "Hokejový klub Čáslav",
+        "name": "Slovan Morav.Třebová",
         "original_rank": 7,
+        "games": 14,
+        "points": 13,
+        "url": "https://ceskyhokej.cz/club/detail/97",
+        "columns": [
+          "7.",
+          "Slovan Morav.Třebová",
+          "14",
+          "4",
+          "0",
+          "1",
+          "9",
+          "45:97",
+          "13"
+        ]
+      },
+      {
+        "name": "Hokejový klub Čáslav",
+        "original_rank": 8,
         "games": 13,
         "points": 13,
         "url": "https://ceskyhokej.cz/club/detail/37",
         "columns": [
-          "7.",
+          "8.",
           "Hokejový klub Čáslav",
           "13",
           "3",
@@ -677,24 +695,6 @@
           "8",
           "32:87",
           "13"
-        ]
-      },
-      {
-        "name": "Slovan Morav.Třebová",
-        "original_rank": 8,
-        "games": 13,
-        "points": 10,
-        "url": "https://ceskyhokej.cz/club/detail/97",
-        "columns": [
-          "8.",
-          "Slovan Morav.Třebová",
-          "13",
-          "3",
-          "0",
-          "1",
-          "9",
-          "41:94",
-          "10"
         ]
       },
       {
@@ -729,5 +729,5 @@
     "penalty_minutes": 4,
     "plus_minus": 0
   },
-  "player_updated_at": "2026-11-17T10:26:03+01:00"
+  "player_updated_at": "2026-11-17T12:19:10+01:00"
 }
