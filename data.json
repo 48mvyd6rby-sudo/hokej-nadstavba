@@ -1,7 +1,7 @@
 {
   "source": "https://ceskyhokej.cz/competition/standings/85",
   "rules": "https://ceskyhokej.cz/competition/description/85",
-  "updated_at": "2026-11-17T14:39:22+01:00",
+  "updated_at": "2026-11-17T16:15:32+01:00",
   "season": "2026/27",
   "provisional_regions": true,
   "regions": [
@@ -108,15 +108,15 @@
         {
           "name": "SK H.Slavia Třebíč",
           "original_rank": 1,
-          "games": 9,
-          "points": 27,
+          "games": 10,
+          "points": 30,
           "url": "https://ceskyhokej.cz/club/detail/22",
           "source_group": 9
         },
         {
           "name": "HC Orli Znojmo",
           "original_rank": 2,
-          "games": 9,
+          "games": 10,
           "points": 21,
           "url": "https://ceskyhokej.cz/club/detail/173",
           "source_group": 9
@@ -133,19 +133,19 @@
       ],
       "teams": [
         {
-          "name": "HC Stadion Litoměřice",
+          "name": "HC Turnov 1931",
           "original_rank": 1,
-          "games": 13,
+          "games": 14,
           "points": 36,
-          "url": "https://ceskyhokej.cz/club/detail/24",
+          "url": "https://ceskyhokej.cz/club/detail/81",
           "source_group": 6
         },
         {
-          "name": "HC Turnov 1931",
+          "name": "HC Stadion Litoměřice",
           "original_rank": 2,
           "games": 13,
-          "points": 33,
-          "url": "https://ceskyhokej.cz/club/detail/81",
+          "points": 36,
+          "url": "https://ceskyhokej.cz/club/detail/24",
           "source_group": 6
         },
         {
@@ -374,19 +374,19 @@
       "id": 6,
       "teams": [
         {
-          "name": "HC Stadion Litoměřice",
+          "name": "HC Turnov 1931",
           "original_rank": 1,
-          "games": 13,
+          "games": 14,
           "points": 36,
-          "url": "https://ceskyhokej.cz/club/detail/24",
+          "url": "https://ceskyhokej.cz/club/detail/81",
           "source_group": 6
         },
         {
-          "name": "HC Turnov 1931",
+          "name": "HC Stadion Litoměřice",
           "original_rank": 2,
           "games": 13,
-          "points": 33,
-          "url": "https://ceskyhokej.cz/club/detail/81",
+          "points": 36,
+          "url": "https://ceskyhokej.cz/club/detail/24",
           "source_group": 6
         }
       ]
@@ -461,15 +461,15 @@
         {
           "name": "SK H.Slavia Třebíč",
           "original_rank": 1,
-          "games": 9,
-          "points": 27,
+          "games": 10,
+          "points": 30,
           "url": "https://ceskyhokej.cz/club/detail/22",
           "source_group": 9
         },
         {
           "name": "HC Orli Znojmo",
           "original_rank": 2,
-          "games": 9,
+          "games": 10,
           "points": 21,
           "url": "https://ceskyhokej.cz/club/detail/173",
           "source_group": 9
@@ -590,39 +590,39 @@
         ]
       },
       {
-        "name": "HC Spartak Choceň",
-        "original_rank": 3,
-        "games": 12,
-        "points": 22,
-        "url": "https://ceskyhokej.cz/club/detail/101",
-        "columns": [
-          "3.",
-          "HC Spartak Choceň",
-          "12",
-          "7",
-          "0",
-          "1",
-          "4",
-          "52:56",
-          "22"
-        ]
-      },
-      {
         "name": "HC Hlinsko",
-        "original_rank": 4,
-        "games": 13,
-        "points": 20,
+        "original_rank": 3,
+        "games": 14,
+        "points": 23,
         "url": "https://ceskyhokej.cz/club/detail/94",
         "columns": [
-          "4.",
+          "3.",
           "HC Hlinsko",
-          "13",
-          "6",
+          "14",
+          "7",
           "0",
           "2",
           "5",
-          "59:61",
-          "20"
+          "68:64",
+          "23"
+        ]
+      },
+      {
+        "name": "HC Spartak Choceň",
+        "original_rank": 4,
+        "games": 13,
+        "points": 22,
+        "url": "https://ceskyhokej.cz/club/detail/101",
+        "columns": [
+          "4.",
+          "HC Spartak Choceň",
+          "13",
+          "7",
+          "0",
+          "1",
+          "5",
+          "55:65",
+          "22"
         ]
       },
       {
@@ -729,5 +729,5 @@
     "penalty_minutes": 4,
     "plus_minus": 0
   },
-  "player_updated_at": "2026-11-17T14:39:22+01:00"
+  "player_updated_at": "2026-11-17T16:15:32+01:00"
 }
