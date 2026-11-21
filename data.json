@@ -1,7 +1,7 @@
 {
   "source": "https://ceskyhokej.cz/competition/standings/85",
   "rules": "https://ceskyhokej.cz/competition/description/85",
-  "updated_at": "2026-11-21T14:25:44+01:00",
+  "updated_at": "2026-11-21T16:10:28+01:00",
   "season": "2026/27",
   "provisional_regions": true,
   "regions": [
@@ -31,19 +31,19 @@
           "source_group": 1
         },
         {
-          "name": "HC Příbram",
+          "name": "HC Meteor Třemošná",
           "original_rank": 1,
-          "games": 12,
-          "points": 33,
-          "url": "https://ceskyhokej.cz/club/detail/48",
+          "games": 13,
+          "points": 36,
+          "url": "https://ceskyhokej.cz/club/detail/135",
           "source_group": 2
         },
         {
-          "name": "HC Meteor Třemošná",
+          "name": "HC Příbram",
           "original_rank": 2,
           "games": 12,
           "points": 33,
-          "url": "https://ceskyhokej.cz/club/detail/135",
+          "url": "https://ceskyhokej.cz/club/detail/48",
           "source_group": 2
         },
         {
@@ -141,11 +141,11 @@
           "source_group": 6
         },
         {
-          "name": "HC Turnov 1931",
+          "name": "Slovan Ústí n.Labem",
           "original_rank": 2,
-          "games": 14,
+          "games": 15,
           "points": 36,
-          "url": "https://ceskyhokej.cz/club/detail/81",
+          "url": "https://ceskyhokej.cz/club/detail/115",
           "source_group": 6
         },
         {
@@ -167,19 +167,19 @@
         {
           "name": "BK Havlíčkův Brod",
           "original_rank": 1,
-          "games": 13,
-          "points": 39,
+          "games": 14,
+          "points": 42,
           "url": "https://ceskyhokej.cz/club/detail/128",
           "columns": [
             "1.",
             "BK Havlíčkův Brod",
-            "13",
-            "13",
+            "14",
+            "14",
             "0",
             "0",
             "0",
-            "162:23",
-            "39"
+            "173:26",
+            "42"
           ],
           "source_group": 8
         },
@@ -216,15 +216,15 @@
         {
           "name": "TECHNIKA HOCKEY BRNO",
           "original_rank": 1,
-          "games": 13,
-          "points": 39,
+          "games": 14,
+          "points": 42,
           "url": "https://ceskyhokej.cz/club/detail/132",
           "source_group": 10
         },
         {
           "name": "FOSFA HC Lvi Břeclav mládež z.s.",
           "original_rank": 2,
-          "games": 13,
+          "games": 14,
           "points": 27,
           "url": "https://ceskyhokej.cz/club/detail/1439",
           "source_group": 10
@@ -290,19 +290,19 @@
       "id": 2,
       "teams": [
         {
-          "name": "HC Příbram",
+          "name": "HC Meteor Třemošná",
           "original_rank": 1,
-          "games": 12,
-          "points": 33,
-          "url": "https://ceskyhokej.cz/club/detail/48",
+          "games": 13,
+          "points": 36,
+          "url": "https://ceskyhokej.cz/club/detail/135",
           "source_group": 2
         },
         {
-          "name": "HC Meteor Třemošná",
+          "name": "HC Příbram",
           "original_rank": 2,
           "games": 12,
           "points": 33,
-          "url": "https://ceskyhokej.cz/club/detail/135",
+          "url": "https://ceskyhokej.cz/club/detail/48",
           "source_group": 2
         }
       ]
@@ -382,11 +382,11 @@
           "source_group": 6
         },
         {
-          "name": "HC Turnov 1931",
+          "name": "Slovan Ústí n.Labem",
           "original_rank": 2,
-          "games": 14,
+          "games": 15,
           "points": 36,
-          "url": "https://ceskyhokej.cz/club/detail/81",
+          "url": "https://ceskyhokej.cz/club/detail/115",
           "source_group": 6
         }
       ]
@@ -418,19 +418,19 @@
         {
           "name": "BK Havlíčkův Brod",
           "original_rank": 1,
-          "games": 13,
-          "points": 39,
+          "games": 14,
+          "points": 42,
           "url": "https://ceskyhokej.cz/club/detail/128",
           "columns": [
             "1.",
             "BK Havlíčkův Brod",
-            "13",
-            "13",
+            "14",
+            "14",
             "0",
             "0",
             "0",
-            "162:23",
-            "39"
+            "173:26",
+            "42"
           ],
           "source_group": 8
         },
@@ -482,15 +482,15 @@
         {
           "name": "TECHNIKA HOCKEY BRNO",
           "original_rank": 1,
-          "games": 13,
-          "points": 39,
+          "games": 14,
+          "points": 42,
           "url": "https://ceskyhokej.cz/club/detail/132",
           "source_group": 10
         },
         {
           "name": "FOSFA HC Lvi Břeclav mládež z.s.",
           "original_rank": 2,
-          "games": 13,
+          "games": 14,
           "points": 27,
           "url": "https://ceskyhokej.cz/club/detail/1439",
           "source_group": 10
@@ -556,19 +556,19 @@
       {
         "name": "BK Havlíčkův Brod",
         "original_rank": 1,
-        "games": 13,
-        "points": 39,
+        "games": 14,
+        "points": 42,
         "url": "https://ceskyhokej.cz/club/detail/128",
         "columns": [
           "1.",
           "BK Havlíčkův Brod",
-          "13",
-          "13",
+          "14",
+          "14",
           "0",
           "0",
           "0",
-          "162:23",
-          "39"
+          "173:26",
+          "42"
         ]
       },
       {
@@ -592,54 +592,54 @@
       {
         "name": "HC Hlinsko",
         "original_rank": 3,
-        "games": 14,
-        "points": 23,
+        "games": 15,
+        "points": 26,
         "url": "https://ceskyhokej.cz/club/detail/94",
         "columns": [
           "3.",
           "HC Hlinsko",
-          "14",
-          "7",
+          "15",
+          "8",
           "0",
           "2",
           "5",
-          "68:64",
-          "23"
+          "74:66",
+          "26"
         ]
       },
       {
         "name": "HC Spartak Choceň",
         "original_rank": 4,
-        "games": 13,
+        "games": 14,
         "points": 22,
         "url": "https://ceskyhokej.cz/club/detail/101",
         "columns": [
           "4.",
           "HC Spartak Choceň",
-          "13",
+          "14",
           "7",
           "0",
           "1",
-          "5",
-          "55:65",
+          "6",
+          "58:76",
           "22"
         ]
       },
       {
         "name": "HC Litomyšl",
         "original_rank": 5,
-        "games": 13,
+        "games": 14,
         "points": 16,
         "url": "https://ceskyhokej.cz/club/detail/96",
         "columns": [
           "5.",
           "HC Litomyšl",
-          "13",
+          "14",
           "4",
           "2",
           "0",
-          "7",
-          "52:60",
+          "8",
+          "54:66",
           "16"
         ]
       },
@@ -722,12 +722,12 @@
     "team": "BK Havlíčkův Brod",
     "url": "https://ceskyhokej.cz/player/detail/9285",
     "competition": "Liga mladšího dorostu 2026/27 – skupina 8",
-    "games": 13,
-    "goals": 12,
+    "games": 14,
+    "goals": 13,
     "assists": 12,
-    "points": 24,
+    "points": 25,
     "penalty_minutes": 4,
     "plus_minus": 0
   },
-  "player_updated_at": "2026-11-21T14:25:44+01:00"
+  "player_updated_at": "2026-11-21T16:10:28+01:00"
 }
