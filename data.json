@@ -1,7 +1,7 @@
 {
   "source": "https://ceskyhokej.cz/competition/standings/85",
   "rules": "https://ceskyhokej.cz/competition/description/85",
-  "updated_at": "2026-11-22T12:06:09+01:00",
+  "updated_at": "2026-11-22T14:24:53+01:00",
   "season": "2026/27",
   "provisional_regions": true,
   "regions": [
@@ -17,8 +17,8 @@
         {
           "name": "MOSTEČTÍ LVI",
           "original_rank": 1,
-          "games": 12,
-          "points": 35,
+          "games": 13,
+          "points": 38,
           "url": "https://ceskyhokej.cz/club/detail/114",
           "source_group": 1
         },
@@ -76,16 +76,16 @@
         {
           "name": "HC MAD BULL",
           "original_rank": 1,
-          "games": 14,
-          "points": 39,
+          "games": 15,
+          "points": 42,
           "url": "https://ceskyhokej.cz/club/detail/91",
           "source_group": 3
         },
         {
           "name": "HC Tábor",
           "original_rank": 2,
-          "games": 14,
-          "points": 39,
+          "games": 15,
+          "points": 42,
           "url": "https://ceskyhokej.cz/club/detail/89",
           "source_group": 3
         },
@@ -159,8 +159,8 @@
         {
           "name": "Hokejový klub Autocentrum Jičín",
           "original_rank": 2,
-          "games": 14,
-          "points": 32,
+          "games": 15,
+          "points": 35,
           "url": "https://ceskyhokej.cz/club/detail/154",
           "source_group": 7
         },
@@ -186,19 +186,19 @@
         {
           "name": "HC Chrudim",
           "original_rank": 2,
-          "games": 15,
-          "points": 36,
+          "games": 16,
+          "points": 39,
           "url": "https://ceskyhokej.cz/club/detail/98",
           "columns": [
             "2.",
             "HC Chrudim",
-            "15",
-            "12",
+            "16",
+            "13",
             "0",
             "0",
             "3",
-            "101:34",
-            "36"
+            "108:34",
+            "39"
           ],
           "source_group": 8
         }
@@ -271,8 +271,8 @@
         {
           "name": "MOSTEČTÍ LVI",
           "original_rank": 1,
-          "games": 12,
-          "points": 35,
+          "games": 13,
+          "points": 38,
           "url": "https://ceskyhokej.cz/club/detail/114",
           "source_group": 1
         },
@@ -313,16 +313,16 @@
         {
           "name": "HC MAD BULL",
           "original_rank": 1,
-          "games": 14,
-          "points": 39,
+          "games": 15,
+          "points": 42,
           "url": "https://ceskyhokej.cz/club/detail/91",
           "source_group": 3
         },
         {
           "name": "HC Tábor",
           "original_rank": 2,
-          "games": 14,
-          "points": 39,
+          "games": 15,
+          "points": 42,
           "url": "https://ceskyhokej.cz/club/detail/89",
           "source_group": 3
         }
@@ -405,8 +405,8 @@
         {
           "name": "Hokejový klub Autocentrum Jičín",
           "original_rank": 2,
-          "games": 14,
-          "points": 32,
+          "games": 15,
+          "points": 35,
           "url": "https://ceskyhokej.cz/club/detail/154",
           "source_group": 7
         }
@@ -437,19 +437,19 @@
         {
           "name": "HC Chrudim",
           "original_rank": 2,
-          "games": 15,
-          "points": 36,
+          "games": 16,
+          "points": 39,
           "url": "https://ceskyhokej.cz/club/detail/98",
           "columns": [
             "2.",
             "HC Chrudim",
-            "15",
-            "12",
+            "16",
+            "13",
             "0",
             "0",
             "3",
-            "101:34",
-            "36"
+            "108:34",
+            "39"
           ],
           "source_group": 8
         }
@@ -574,19 +574,19 @@
       {
         "name": "HC Chrudim",
         "original_rank": 2,
-        "games": 15,
-        "points": 36,
+        "games": 16,
+        "points": 39,
         "url": "https://ceskyhokej.cz/club/detail/98",
         "columns": [
           "2.",
           "HC Chrudim",
-          "15",
-          "12",
+          "16",
+          "13",
           "0",
           "0",
           "3",
-          "101:34",
-          "36"
+          "108:34",
+          "39"
         ]
       },
       {
@@ -610,19 +610,19 @@
       {
         "name": "HC Spartak Choceň",
         "original_rank": 4,
-        "games": 14,
-        "points": 22,
+        "games": 15,
+        "points": 25,
         "url": "https://ceskyhokej.cz/club/detail/101",
         "columns": [
           "4.",
           "HC Spartak Choceň",
-          "14",
-          "7",
+          "15",
+          "8",
           "0",
           "1",
           "6",
-          "58:76",
-          "22"
+          "64:79",
+          "25"
         ]
       },
       {
@@ -682,36 +682,36 @@
       {
         "name": "Hokejový klub Čáslav",
         "original_rank": 8,
-        "games": 13,
+        "games": 14,
         "points": 13,
         "url": "https://ceskyhokej.cz/club/detail/37",
         "columns": [
           "8.",
           "Hokejový klub Čáslav",
-          "13",
+          "14",
           "3",
           "2",
           "0",
-          "8",
-          "32:87",
+          "9",
+          "32:94",
           "13"
         ]
       },
       {
         "name": "HC Světlá n. Sáz.",
         "original_rank": 9,
-        "games": 13,
+        "games": 14,
         "points": 7,
         "url": "https://ceskyhokej.cz/club/detail/179",
         "columns": [
           "9.",
           "HC Světlá n. Sáz.",
-          "13",
+          "14",
           "2",
           "0",
           "1",
-          "10",
-          "42:105",
+          "11",
+          "45:111",
           "7"
         ]
       }
@@ -729,5 +729,5 @@
     "penalty_minutes": 4,
     "plus_minus": 0
   },
-  "player_updated_at": "2026-11-22T12:06:09+01:00"
+  "player_updated_at": "2026-11-22T14:24:53+01:00"
 }
