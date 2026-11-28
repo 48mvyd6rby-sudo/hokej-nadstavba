@@ -1,7 +1,7 @@
 {
   "source": "https://ceskyhokej.cz/competition/standings/85",
   "rules": "https://ceskyhokej.cz/competition/description/85",
-  "updated_at": "2026-11-28T16:10:15+01:00",
+  "updated_at": "2026-11-28T18:12:41+01:00",
   "season": "2026/27",
   "provisional_regions": true,
   "regions": [
@@ -33,8 +33,8 @@
         {
           "name": "HC Příbram",
           "original_rank": 1,
-          "games": 13,
-          "points": 36,
+          "games": 14,
+          "points": 39,
           "url": "https://ceskyhokej.cz/club/detail/48",
           "source_group": 2
         },
@@ -74,19 +74,19 @@
       ],
       "teams": [
         {
-          "name": "HC Tábor",
+          "name": "HC MAD BULL",
           "original_rank": 1,
           "games": 16,
           "points": 45,
-          "url": "https://ceskyhokej.cz/club/detail/89",
+          "url": "https://ceskyhokej.cz/club/detail/91",
           "source_group": 3
         },
         {
-          "name": "HC MAD BULL",
+          "name": "HC Tábor",
           "original_rank": 2,
-          "games": 15,
-          "points": 42,
-          "url": "https://ceskyhokej.cz/club/detail/91",
+          "games": 16,
+          "points": 45,
+          "url": "https://ceskyhokej.cz/club/detail/89",
           "source_group": 3
         },
         {
@@ -224,8 +224,8 @@
         {
           "name": "FOSFA HC Lvi Břeclav mládež z.s.",
           "original_rank": 2,
-          "games": 14,
-          "points": 27,
+          "games": 15,
+          "points": 30,
           "url": "https://ceskyhokej.cz/club/detail/1439",
           "source_group": 10
         },
@@ -292,8 +292,8 @@
         {
           "name": "HC Příbram",
           "original_rank": 1,
-          "games": 13,
-          "points": 36,
+          "games": 14,
+          "points": 39,
           "url": "https://ceskyhokej.cz/club/detail/48",
           "source_group": 2
         },
@@ -311,19 +311,19 @@
       "id": 3,
       "teams": [
         {
-          "name": "HC Tábor",
+          "name": "HC MAD BULL",
           "original_rank": 1,
           "games": 16,
           "points": 45,
-          "url": "https://ceskyhokej.cz/club/detail/89",
+          "url": "https://ceskyhokej.cz/club/detail/91",
           "source_group": 3
         },
         {
-          "name": "HC MAD BULL",
+          "name": "HC Tábor",
           "original_rank": 2,
-          "games": 15,
-          "points": 42,
-          "url": "https://ceskyhokej.cz/club/detail/91",
+          "games": 16,
+          "points": 45,
+          "url": "https://ceskyhokej.cz/club/detail/89",
           "source_group": 3
         }
       ]
@@ -490,8 +490,8 @@
         {
           "name": "FOSFA HC Lvi Břeclav mládež z.s.",
           "original_rank": 2,
-          "games": 14,
-          "points": 27,
+          "games": 15,
+          "points": 30,
           "url": "https://ceskyhokej.cz/club/detail/1439",
           "source_group": 10
         }
@@ -729,5 +729,5 @@
     "penalty_minutes": 4,
     "plus_minus": 0
   },
-  "player_updated_at": "2026-11-28T16:10:15+01:00"
+  "player_updated_at": "2026-11-28T18:12:41+01:00"
 }
