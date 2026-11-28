@@ -1,7 +1,7 @@
 {
   "source": "https://ceskyhokej.cz/competition/standings/85",
   "rules": "https://ceskyhokej.cz/competition/description/85",
-  "updated_at": "2026-11-28T10:13:56+01:00",
+  "updated_at": "2026-11-28T12:11:56+01:00",
   "season": "2026/27",
   "provisional_regions": true,
   "regions": [
@@ -133,35 +133,35 @@
       ],
       "teams": [
         {
-          "name": "HC Stadion Litoměřice",
+          "name": "HC Turnov 1931",
           "original_rank": 1,
-          "games": 15,
+          "games": 16,
+          "points": 39,
+          "url": "https://ceskyhokej.cz/club/detail/81",
+          "source_group": 6
+        },
+        {
+          "name": "HC Stadion Litoměřice",
+          "original_rank": 2,
+          "games": 16,
           "points": 39,
           "url": "https://ceskyhokej.cz/club/detail/24",
           "source_group": 6
         },
         {
-          "name": "Slovan Ústí n.Labem",
-          "original_rank": 2,
-          "games": 15,
-          "points": 36,
-          "url": "https://ceskyhokej.cz/club/detail/115",
-          "source_group": 6
-        },
-        {
-          "name": "HC Náchod",
+          "name": "Hokejový klub Autocentrum Jičín",
           "original_rank": 1,
-          "games": 15,
-          "points": 37,
-          "url": "https://ceskyhokej.cz/club/detail/158",
+          "games": 16,
+          "points": 38,
+          "url": "https://ceskyhokej.cz/club/detail/154",
           "source_group": 7
         },
         {
-          "name": "HCM Jaroměř",
+          "name": "HC Náchod",
           "original_rank": 2,
           "games": 15,
-          "points": 36,
-          "url": "https://ceskyhokej.cz/club/detail/155",
+          "points": 37,
+          "url": "https://ceskyhokej.cz/club/detail/158",
           "source_group": 7
         },
         {
@@ -374,19 +374,19 @@
       "id": 6,
       "teams": [
         {
-          "name": "HC Stadion Litoměřice",
+          "name": "HC Turnov 1931",
           "original_rank": 1,
-          "games": 15,
+          "games": 16,
           "points": 39,
-          "url": "https://ceskyhokej.cz/club/detail/24",
+          "url": "https://ceskyhokej.cz/club/detail/81",
           "source_group": 6
         },
         {
-          "name": "Slovan Ústí n.Labem",
+          "name": "HC Stadion Litoměřice",
           "original_rank": 2,
-          "games": 15,
-          "points": 36,
-          "url": "https://ceskyhokej.cz/club/detail/115",
+          "games": 16,
+          "points": 39,
+          "url": "https://ceskyhokej.cz/club/detail/24",
           "source_group": 6
         }
       ]
@@ -395,19 +395,19 @@
       "id": 7,
       "teams": [
         {
-          "name": "HC Náchod",
+          "name": "Hokejový klub Autocentrum Jičín",
           "original_rank": 1,
-          "games": 15,
-          "points": 37,
-          "url": "https://ceskyhokej.cz/club/detail/158",
+          "games": 16,
+          "points": 38,
+          "url": "https://ceskyhokej.cz/club/detail/154",
           "source_group": 7
         },
         {
-          "name": "HCM Jaroměř",
+          "name": "HC Náchod",
           "original_rank": 2,
           "games": 15,
-          "points": 36,
-          "url": "https://ceskyhokej.cz/club/detail/155",
+          "points": 37,
+          "url": "https://ceskyhokej.cz/club/detail/158",
           "source_group": 7
         }
       ]
@@ -610,19 +610,19 @@
       {
         "name": "HC Spartak Choceň",
         "original_rank": 4,
-        "games": 15,
-        "points": 25,
+        "games": 16,
+        "points": 28,
         "url": "https://ceskyhokej.cz/club/detail/101",
         "columns": [
           "4.",
           "HC Spartak Choceň",
-          "15",
-          "8",
+          "16",
+          "9",
           "0",
           "1",
           "6",
-          "64:79",
-          "25"
+          "70:83",
+          "28"
         ]
       },
       {
@@ -664,18 +664,18 @@
       {
         "name": "Hokejový klub Čáslav",
         "original_rank": 7,
-        "games": 15,
+        "games": 16,
         "points": 16,
         "url": "https://ceskyhokej.cz/club/detail/37",
         "columns": [
           "7.",
           "Hokejový klub Čáslav",
-          "15",
+          "16",
           "4",
           "2",
           "0",
-          "9",
-          "37:96",
+          "10",
+          "41:102",
           "16"
         ]
       },
@@ -729,5 +729,5 @@
     "penalty_minutes": 4,
     "plus_minus": 0
   },
-  "player_updated_at": "2026-11-28T10:13:56+01:00"
+  "player_updated_at": "2026-11-28T12:11:56+01:00"
 }
